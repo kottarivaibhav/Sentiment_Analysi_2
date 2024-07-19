@@ -65,9 +65,9 @@ def pred1():
     if request.method == 'POST':
         text = request.form['txt']
         blob = TextBlob(text)
-        if blob.sentiment.polarity > 0:
+        if blob.sentiment.polarity > 1:
             text_sentiment = "positive"
-        elif blob.sentiment.polarity == 0:
+        elif blob.sentiment.polarity ==0:
             text_sentiment = "neutral"
         else:
             text_sentiment = "negative"
