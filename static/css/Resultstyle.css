@@ -1,10 +1,35 @@
 body {
+<<<<<<< HEAD
   color:#f8f9fa !important;
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 #contact {
   background:#f8f9fa96;
+=======
+  color: #08315a !important;
+  background: linear-gradient(to right, #191727, #6760ba, #5e5eef);
+}
+
+.display-4 {
+  font-size: 2.5rem; /* Adjust font size as needed */
+}
+
+.h3 {
+  margin-bottom: 2rem; /* Adjust margin-bottom as needed */
+}
+
+.btn-primary {
+  background-color: #46529e; /* Adjust button color as desired */
+  border-color: #4055ca; /* Match button color with border */
+}
+
+.card {
+  border-color: #81aedb; /* Adjust border color as needed */
+}
+#contact {
+  background:#16293b96;
+>>>>>>> azure_deploy/main
   padding:25px;
   margin:50px 0;
 }
@@ -27,3 +52,8 @@ body {
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> azure_deploy/main

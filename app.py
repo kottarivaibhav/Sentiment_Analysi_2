@@ -46,7 +46,11 @@ def create_sentiment_pie_chart(tweets):
 
 @app.route('/')
 def home():
+<<<<<<< HEAD
     return render_template("index.html")
+=======
+    return render_template("features.html")
+>>>>>>> azure_deploy/main
 
 @app.route("/predict", methods=['POST'])
 def pred():
