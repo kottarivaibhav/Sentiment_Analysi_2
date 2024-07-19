@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .summary {
+            margin-bottom: 20px;
+        }
+        .summary table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary th, .summary td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .wordclouds {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .wordcloud {
+            flex: 1;
+            text-align: center;
+        }
+        .wordcloud img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sentiment Analysis Report</h1>
+    
+    <div class="summary">
+        <h2>Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sentiment</th>
+                    <th>Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Positive</td>
+                    <td>{{ data.positive_count }}</td>
+                </tr>
+                <tr>
+                    <td>Neutral</td>
+                    <td>{{ data.neutral_count }}</td>
+                </tr>
+                <tr>
+                    <td>Negative</td>
+                    <td>{{ data.negative_count }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="wordclouds">
+        <div class="wordcloud">
+            <h2>Word Cloud - Positive Sentiment</h2>
+            <img src="sentiment_wordclouds.png" alt="Word Cloud - Positive Sentiment">
+        </div>
+        <div class="wordcloud">
+            <h2>Word Cloud - Neutral Sentiment</h2>
+            <img src="sentiment_wordclouds.png" alt="Word Cloud - Neutral Sentiment">
+        </div>
+        <div class="wordcloud">
+            <h2>Word Cloud - Negative Sentiment</h2>
+            <img src="sentiment_wordclouds.png" alt="Word Cloud - Negative Sentiment">
+        </div>
+    </div>
+    
+</body>
+</html>
